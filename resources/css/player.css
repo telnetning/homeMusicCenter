@@ -1,0 +1,307 @@
+body {
+	margin:0px ;
+	padding:0px;
+	min-width: 1400px;
+	background-color: #eee;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: none;
+	color:#000;
+}
+header{
+	width:100%;
+	height:320px;
+	background-color: #fff;
+	background: url("/img/base/head.png") no-repeat center;
+	background-size: 100%;
+}
+
+#pop{
+	opacity: 0;
+	width:140px;
+	height:40px;
+	background-color: rgba(255,255,255,0.75);
+	margin-left:45%;
+	position: fixed;
+	z-index: 99;
+	top:115px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+}
+
+#pop span{
+	width:0px;
+	margin:0px auto;
+	display: block;
+	position: relative;
+	border-top:10px solid rgba(255,255,255,0.75);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent; 
+	top:-10px;
+}
+@font-face{
+	src:url('fonts/glyphicons-halflings-regular.svg'),
+		url('fonts/glyphicons-halflings-regular.ttf'),
+		url('fonts/glyphicons-halflings-regular.woff'),
+		url('fonts/glyphicons-halflings-regular.woff2'),
+		url('fonts/glyphicons-halflings-regular.eot')
+	
+}
+#img{
+	width:160px;
+	height:160px;
+	box-shadow: 0px 0px 25px 1px #eee;
+	float: right;
+	margin-right: 180px;
+	margin-top: 30px;
+	border-radius: 100px;
+	background-image: url('../img/def.jpg');
+	background-position: center;
+	background-size: 100%;
+	border: 1px solid #fff;
+		/*transition:all 2s; */
+	/*-webkit-transition:all 2s;*/
+
+
+}
+.rotate{
+	animation:Rotate 10s linear infinite;
+	-webkit-animation:Rotate 10s linear infinite;
+
+}
+
+@keyframes Rotate
+{
+	from{
+		transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+	}
+}
+@-webkit-keyframes Rotate
+{
+	from{
+		transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+	}
+
+}
+
+
+.container{
+	width:90%;
+	margin:-150px auto;
+	min-height:500px;
+	height: auto;
+	
+}
+#played {
+	width:400px;
+	height:7px;
+	background-color: rgba(255,255,255,0);
+	border:1px solid #ccc;
+	border-radius: 2px; 
+	float:left;
+	margin:5px 10px;
+
+}
+#played span{
+	display: block;
+	width:0px;
+	height:8px;
+	background-color: #fff;
+}
+
+.head_container{
+	width:88%;
+	margin:0px auto;
+}
+
+
+.header {
+	width:88%;
+	margin:0px auto;
+	height:120px;
+	margin-top: 200px;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 8px  8px 0px 0px;
+	padding-top:10px;
+
+}
+.song_infor {
+	width:140px;
+	min-width:150px;
+	height:120px;
+	float:left;
+}
+.control{
+	height:120px;
+	width:370px;
+	padding-top: 50px;
+	margin-left: 50px;
+	float:left;
+}
+#song_time{
+	width: 90px;
+	margin-right: 20px;
+	float:left;
+}
+
+
+#btn{
+	width:250px;
+	height:50px;
+	float:left;
+	margin-top: -8px;
+
+}
+.btn{
+	background-color: rgba(0,0,0,0);
+	border: 0;
+
+}
+.btn:hover{
+	background-color: rgba(0,0,0,0);
+}
+
+.show_music{
+	width:500px;
+	height:50px;
+	float: left;
+	position: relative;
+	margin-top: 48px;
+}
+.range{
+	position: absolute;
+	top:-5px;
+	width:500px;
+	height:40px;
+	cursor: pointer;
+}
+.range_in{
+	width:10px;
+	height:10px;
+	border-radius:5px; 
+	margin-top:11px;
+	left:-5px;
+	top:0px;
+	position: relative;
+	cursor: pointer;
+}
+		
+
+.glyphicon{
+	font-size: 24px;
+	text-align: center;
+	color:rgba(74,0,255,0.5);
+}
+.glyphicon:hover {
+	color:rgb(74,0,255);
+}
+
+#canvas{
+	width:500px;
+	height: 80px;
+	margin-top:-30px;
+
+	}
+
+#content{
+	width:100%;
+	height:300px;
+	background-color: #fff;
+	margin-top: 470px;
+	padding-top: 40px;
+}
+
+#content .glyphicon{
+	font-size: 16px ;
+	line-height: 1.5;
+}
+aside .glyphicon{
+	color: #000;
+}
+aside{
+	width:30%;
+	padding: 20px;
+	float: left;
+}
+aside ul {
+	width:90%;
+	margin: 0px auto;
+}
+aside .list-group-item{
+	border: 0px;
+	font-size: 16px;
+	border-radius:0px; 
+	/*border-left:2px solid #000;*/
+}
+
+#search{
+	width:90%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+#music_list{
+	box-sizing:border-box;
+	width:70%;
+	padding: 20px 30px;
+	float: left;
+}
+.glyphicon-music {
+
+	color: #000;
+}
+.heart, .remove{
+	padding:0px 8px;
+	float: right;
+	display: none;
+}
+.li:hover  .heart,
+.li:hover .remove {
+	display: block;
+	cursor: pointer;
+
+}
+.li:hover  .span1{
+	color:rgb(74,0,255);
+
+}
+#myfav li{
+	padding: 5px;
+}
+#myfav li:hover .remove{
+	display: block;
+	cursor: pointer;
+}
+#myfav .span1{
+	font-size: 14px;
+}
+#myfav .span1::before{
+	margin-right: 5px;
+
+}
+.my{
+	cursor: pointer;
+}
+
+/*#search {
+	border:none;
+	box-shadow: none;
+	border-bottom:1px solid #000;
+
+}
+*/

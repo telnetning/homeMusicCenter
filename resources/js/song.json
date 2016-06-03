@@ -1,0 +1,38 @@
+{
+"songs":[
+
+		{
+			"author":"王菲",
+			"src":"../song/hdou.mp3",
+			"name":"红豆",
+			"type":"mp3",
+			"cover":"/img/hdou.png"
+		},
+
+		{
+			"author":"王菲",
+			"src":"../song/ccongnanian.mp3",
+			"name":"匆匆那年",
+			"type":"mp3",
+			"cover":"/img/ccongnanian.png"
+		},
+
+		{
+			"author":"王菲",
+			"src":"../song/xwangshu.mp3",
+			"name":"笑忘书",
+			"type":"mp3",
+			"cover":"/img/xwangshu.png"
+		},
+		{
+			"author":"王菲",
+			"src":"../song/lnian.mp3",
+			"name":"流年",
+			"type":"mp3",
+			"cover":"/img/lnian.png"
+		}
+
+
+	]
+
+}

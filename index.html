@@ -1,1 +1,89 @@
-This is the default index page
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>player</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/player.css" />
+
+</head>
+<body>
+	<!-- <audio id="audio" src="" controls="controls">您的设备不支持</audio>
+	<a href="#" id="btn"><img src="img/base/play.png"></a>
+	<button id="loop">循环播放</button>
+	<div id="played"><span></span></div>
+	<div id="infor" ></div> -->
+	<audio id="audio" src="" ></audio>
+
+	<header class="navbar-fixed-top">
+		<div id="pop"><p>添加成功！</p><span></span></div>
+		
+		<div id="img"></div>
+	</header>
+
+	<div class="container">
+		<div class="header navbar-fixed-top">
+			<div class="head_container">
+				<div class="song_infor">
+					<h2></h2>
+					<h4></h4>
+				</div>
+				<div class="show_music">
+					<div class="range"><div class="range_in"></div></div>
+					<canvas id="canvas"></canvas>
+					
+				</div>
+
+				<div class="control">
+					<p id="song_time">00:00 / 00:00</p>
+					<div id="btn" >
+					<div class="btn-group" role="group" >
+						<button type="button" id="backward" aira-hidden="true" class="btn btn-default" ><span class="glyphicon glyphicon-step-backward" title="上一首"></span></button>	
+						<button type="button" id="play" aira-hidden="true" class="btn btn-default"><span class="glyphicon glyphicon-play" ></span></button>
+						<button type="button" id="forward" aira-hidden="true" class="btn btn-default" ><span class="glyphicon glyphicon-step-forward" title="下一首"></span></button>
+						<button type="button" id="random" aira-hidden="true" class="btn btn-default"><span class="glyphicon glyphicon-random" title="随机播放"></span></button>
+						<button type="button" id="repeat" aira-hidden="true" class="btn btn-default"><span class="glyphicon glyphicon-repeat" title="单曲循环"></span></button>
+					</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+
+		<div id="content">
+			<aside>
+				<input type="search" id="search" class="form-control" name="search" results="s" placeholder="歌手 音乐 搜索..."/>
+				<ul class="list-group">
+
+					<li class=" list-group-item list"><span class="glyphicon glyphicon-list span"></span> <span>播放列表</span></li>
+					<li class=" list-group-item my"><span class="glyphicon glyphicon-heart span"></span> <span>我的收藏</span>
+						<ul id="myfav" class="list-group">
+						</ul>
+
+					</li>
+
+				</ul>
+			</aside>
+			<div id="music_list">
+				<ul class="list-group">
+				</ul>
+			</div>
+	
+		</div>
+
+		<footer></footer>
+
+
+	</div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/play.js" ></script>
+
+</body>
+	
+
+
+
+</html>
