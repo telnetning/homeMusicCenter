@@ -3,10 +3,10 @@
 
 		{
 			"author":"王菲",
-			"src":"../song/hdou.mp3",
+			"src":"resources/song/hdou.mp3",
 			"name":"红豆",
 			"type":"mp3",
-			"cover":"/img/hdou.png"
+			"cover":"resources/img/hdou.png"
 		},
 
 		{

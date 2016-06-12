@@ -1,2 +1,3 @@
 schema
-resource/song/
+resources/song/
+.DS_Store
