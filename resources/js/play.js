@@ -42,13 +42,6 @@ $(document).ready(function(){
 
 	});
 	$("#random").click(function(){
-		// if(audio.loop){
-		// 	audio.loop=false;
-		// 	$("#repeat span").css("color","rgba(74,0,255,0.5)");
-		// }else{
-		// 	audio.loop=true;
-		// 	$("#repeat span").css("color","rgb(74,0,255)");		
-		// }
 
 	});
 
@@ -124,7 +117,7 @@ $(document).ready(function(){
 	});
 
 	function loadSong(){
-		var url="js/song.json";
+		var url="resources/js/song.json";
 		var time;
 		$.get(url,function(data){
 			
