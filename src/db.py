@@ -7,7 +7,7 @@ from hmcException import ConnError, CreateError
 
 DB_HOST = "localhost"
 DB_USER = "root"
-DB_PASS = "password1"
+DB_PASS = "password"
 DB_PORT = 3306
 
 #create databases and tables

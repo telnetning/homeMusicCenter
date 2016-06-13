@@ -3,14 +3,14 @@
 
 try:
     from exception import Exception, Warning, StandardError
-except importError:
+except ImportError:
     StandError = Exception
 
-class ConnError(Error):
+class ConnError(Exception):
     """Exception that connect to the sql error.
     """
 
-class CreatError(Error):
+class CreateError(Exception):
     """Exception raised by create database or table
     """
 
