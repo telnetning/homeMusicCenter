@@ -1,3 +1,5 @@
 schema
 resources/song/
 .DS_Store
+*.pyc
+*.swp
