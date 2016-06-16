@@ -29,14 +29,6 @@ class HandlerSongOpe(FileSystemEventHandler):
         db = Storage()
         cur = db.db
         
-        if info["album"]:
-            #albumQ = cur.select('album', 'select id from album where name=$name', vars={'name': info["name"]})
-            albumQ = cur.select('albums', {'name': info['album']}, where = 'name=$name')
-            if albumQ:
-                albumNo = albumQ[0]["id"] 
-            else:
-                albumNo = cur.insert('albums', name = info["album"])
-
         if info["singer"]:
             #singerQ = cur.select('singer', "select id from singer wbere name=$name", vars= {'name': info['singer']})
             singerQ = cur.select('singers', {'name': info["singer"]}, where = 'name=$name')
@@ -44,7 +36,16 @@ class HandlerSongOpe(FileSystemEventHandler):
                 singerNo = singerQ[0]["id"]
             else:
                 singerNo = cur.insert("singers", name = info["singer"])
-        
+
+        if info["album"]:
+            #albumQ = cur.select('album', 'select id from album where name=$name', vars={'name': info["name"]})
+            albumQ = cur.select('albums', {'name': info['album']}, where = 'name=$name')
+            if albumQ:
+                albumNo = albumQ[0]["id"] 
+            else:
+                albumNo = cur.insert('albums', name = info["album"], singer = singerNo)
+
+       
         #建立歌曲文件的快捷方式用于 web 访问，快捷方式位于 {hmcRoot}/resources/song 下
         songName = os.path.basename(event.src_path)
         command = 'ln -s "' + event.src_path + '" ' + '"' + self.hmcRoot + '/resources/song/' + songName + '"'

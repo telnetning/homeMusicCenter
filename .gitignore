@@ -3,3 +3,4 @@ resources/song/
 .DS_Store
 *.pyc
 *.swp
+setEnv.sh

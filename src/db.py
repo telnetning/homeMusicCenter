@@ -5,11 +5,12 @@
 import MySQLdb
 from hmcException import ConnSqlError, CreateTableError
 import web
+import os
 
-DB_HOST = "localhost"
-DB_USER = "root"
-DB_PASS = "password"
-DB_PORT = 3306
+DB_HOST = os.getenv('HMC_MYSQL_HOST') 
+DB_USER = os.getenv('HMC_MYSQL_USER') 
+DB_PASS = os.getenv('HMC_MYSQL_PASS')
+DB_PORT = int(os.getenv('HMC_MYSQL_PORT')) 
 
 class Storage:
     def __init__(self):
@@ -41,6 +42,7 @@ def initDb():
     createAlbums = '''create table if not exists albums(
                         id int not null auto_increment primary key,
                         name varchar(200) not null default "fake name",
+                        singer int,
                         published int,
                         cover varchar(150),
                         comment varchar(1000)
