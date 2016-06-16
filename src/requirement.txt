@@ -1,0 +1,5 @@
+pyyaml
+MySQL-python
+id3reader
+#pyinotify mac os不可用 
+watchdog
